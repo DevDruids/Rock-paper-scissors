@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  background-color: #0d6efd;
+}
+body header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  place-content: center;
+  gap: 100px;
+  list-style: none;
+}
+body header ul .nav-item {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body header ul .nav-item-link {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  gap: 15px;
+}
+body header ul .nav-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+body header .header-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  gap: 20px;
+}
+body header .header-btn-container .slash {
+  color: #ffffff;
+  font-size: 24px;
+  border: 0;
+}
+body header .header-btn-container .sign-in_btn, body header .header-btn-container .sign-up_btn {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 24px;
+  border: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  gap: 7px;
+}
+body header .header-btn-container .bi {
+  margin-top: -5px;
+}
+body header .header-btn-container .sign-in_btn:hover, body header .header-btn-container .sign-up_btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+body .start-game_section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  padding-top: 100px;
+}
