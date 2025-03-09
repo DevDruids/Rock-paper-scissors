@@ -14,23 +14,6 @@ body{
     
     ul{
       list-style: none;
-
-      .nav-item{
-        transition: all .3s ease;
-      }
-
-      .nav-item-link{
-        color: #ffffff;
-        font-size: 24px;
-        text-decoration: none;
-        display: flex;
-        place-content: center;
-        gap: 15px;
-      }
-      
-      .nav-item:hover{
-        transform: scale(1.05);
-      }
     }
     
     .header-btn-container{
@@ -91,20 +74,13 @@ body{
           justify-content: space-around;
           margin-top: 2%;
 
-          .player-choise{
+          .player-choise, .computer-choice{
             display: flex;
             flex-direction: column;
-            gap: 50px;
+            gap: 100px;
             justify-content: center;
             align-items: center;
-          }
-
-          .computer-choice{
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-            justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
           }
 
           .info-between{
@@ -113,25 +89,11 @@ body{
             align-items: center;
             justify-content: center;
             gap: 25px;
-
-            .btn-startGame{
-              border: 2px solid #0d6efd;
-              border-radius: 10px;
-              padding: 10px 25px;
-              color: black;
+            
+            .renewing-text{
               font-size: 24px;
-              background: transparent;
-              font-weight: bold;
-              transition: all .3s ease;
-            }
-
-            .btn-startGame:hover{
-              transform: scale(1.05);
-            }
-
-            .btn-startGame:active{
-              transform: scale(0.95);
-              background-color: rgb(241, 241, 241);
+              color: black;
+              max-width: 250px;
             }
           }
 

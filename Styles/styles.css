@@ -24,24 +24,6 @@ body header {
 body header ul {
   list-style: none;
 }
-body header ul .nav-item {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-body header ul .nav-item-link {
-  color: #ffffff;
-  font-size: 24px;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: center;
-  gap: 15px;
-}
-body header ul .nav-item:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
 body header .header-btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +95,7 @@ body .start-game_section .wrapper .game-field .choise-list {
       justify-content: space-around;
   margin-top: 2%;
 }
-body .start-game_section .wrapper .game-field .choise-list .player-choise {
+body .start-game_section .wrapper .game-field .choise-list .player-choise, body .start-game_section .wrapper .game-field .choise-list .computer-choice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,29 +103,15 @@ body .start-game_section .wrapper .game-field .choise-list .player-choise {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 50px;
+  gap: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-body .start-game_section .wrapper .game-field .choise-list .computer-choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 body .start-game_section .wrapper .game-field .choise-list .info-between {
   display: -webkit-box;
@@ -161,25 +129,10 @@ body .start-game_section .wrapper .game-field .choise-list .info-between {
           justify-content: center;
   gap: 25px;
 }
-body .start-game_section .wrapper .game-field .choise-list .info-between .btn-startGame {
-  border: 2px solid #0d6efd;
-  border-radius: 10px;
-  padding: 10px 25px;
-  color: black;
+body .start-game_section .wrapper .game-field .choise-list .info-between .renewing-text {
   font-size: 24px;
-  background: transparent;
-  font-weight: bold;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-body .start-game_section .wrapper .game-field .choise-list .info-between .btn-startGame:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-body .start-game_section .wrapper .game-field .choise-list .info-between .btn-startGame:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-  background-color: rgb(241, 241, 241);
+  color: black;
+  max-width: 250px;
 }
 body .start-game_section .wrapper .game-field .choise-list .stars-list ul {
   list-style: none;
